@@ -1,0 +1,477 @@
+/* ==========================================================================
+   Personal website styles — minimal, academic
+   Tweak the variables below to re-theme the whole site.
+   ========================================================================== */
+
+:root {
+  --bg: #ffffff;
+  --text: #222222;
+  --text-muted: #666666;
+  --link: #1a5fb4;
+  --link-hover: #0d3b78;
+  --border: #e5e5e5;
+  --accent-bg: #f7f7f7;
+  --max-width: 42rem;
+  --font-body: "Charter", "Georgia", "Cambria", serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  overflow-wrap: break-word; /* long URLs/words never force horizontal scroll */
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem 4rem;
+}
+
+/* --- Header / nav ------------------------------------------------------- */
+
+header.site-header {
+  max-width: var(--max-width);
+  margin: 0 auto 2.5rem;
+  padding: 2.5rem 1.25rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-ui);
+}
+
+nav.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  font-size: 0.95rem;
+}
+
+nav.site-nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+
+nav.site-nav a:hover {
+  color: var(--text);
+}
+
+nav.site-nav a.active {
+  color: var(--text);
+  border-bottom: 2px solid var(--text);
+}
+
+/* --- Typography --------------------------------------------------------- */
+
+h1 {
+  font-size: 1.6rem;
+  line-height: 1.25;
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 2.25rem 0 0.75rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 1.5rem 0 0.25rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 1.25rem;
+  margin: 0 0 1rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+code {
+  font-family: "SF Mono", "Menlo", "Consolas", monospace;
+  font-size: 0.85em;
+  background: var(--accent-bg);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+.small {
+  font-size: 0.88rem;
+}
+
+/* --- About page --------------------------------------------------------- */
+
+.about-intro {
+  display: flex;
+  gap: 1.75rem;
+  align-items: flex-start;
+}
+
+.about-intro-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.about-intro-text p:first-child {
+  margin-top: 0;
+}
+
+.about-photo {
+  margin: 0.25rem 0 0;
+  flex: 0 0 12rem;
+  width: 12rem;
+}
+
+.about-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+
+.about-photo figcaption {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
+.contact-links {
+  font-family: var(--font-ui);
+  font-size: 0.92rem;
+  margin-bottom: 1.75rem;
+}
+
+.sep {
+  color: var(--text-muted);
+  margin: 0 0.6rem;
+}
+
+.entry {
+  margin-bottom: 1.4rem;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.entry-title {
+  font-weight: 600;
+}
+
+.entry-org {
+  color: var(--text-muted);
+}
+
+.entry-date {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  white-space: nowrap;
+  font-family: var(--font-ui);
+}
+
+.entry-details {
+  margin: 0.3rem 0 0;
+  color: var(--text);
+}
+
+/* --- Course reviews ----------------------------------------------------- */
+
+.legend {
+  margin-top: -0.5rem;
+}
+
+.legend .course-rating {
+  margin-right: 0.15rem;
+}
+
+/* Category index at the top of the page */
+.category-index {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0 2.5rem;
+  background: var(--accent-bg);
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.75rem;
+  align-items: baseline;
+  padding: 0.35rem 0;
+}
+
+.category + .category {
+  border-top: 1px solid var(--border);
+}
+
+.category-name {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.9rem;
+  flex: 0 0 13rem;
+}
+
+.category-codes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.85rem;
+  font-family: "SF Mono", "Menlo", "Consolas", monospace;
+  font-size: 0.82rem;
+}
+
+/* Semester groupings */
+.semester-heading {
+  font-size: 1.15rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border);
+  margin: 2.5rem 0 1.25rem;
+}
+
+.course {
+  margin-bottom: 1.75rem;
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  flex-wrap: wrap;
+}
+
+.course-title {
+  display: inline;
+}
+
+.course-rating {
+  color: #d4a017;
+  margin-right: 0.15rem;
+}
+
+.course-code {
+  font-family: "SF Mono", "Menlo", "Consolas", monospace;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-right: 0.4rem;
+}
+
+.course-name {
+  font-weight: 600;
+}
+
+.course-instructor {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.course-review {
+  margin: 0.35rem 0 0;
+}
+
+/* --- Projects ----------------------------------------------------------- */
+
+.project {
+  margin-bottom: 2rem;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-name {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.project-name a {
+  color: var(--text);
+}
+
+.project-name a:hover {
+  color: var(--link);
+}
+
+.project-tech {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+}
+
+.project-description {
+  margin: 0.4rem 0 0;
+}
+
+.project-links {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.project-links a {
+  color: var(--link);
+}
+
+.project-links a::before {
+  content: "→ ";
+  color: var(--text-muted);
+}
+
+/* --- Footer ------------------------------------------------------------- */
+
+footer.site-footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-family: var(--font-ui);
+}
+
+/* --- Responsive ---------------------------------------------------------
+   The main column caps at --max-width, so on tablets the layout is already
+   the same centered column as desktop with side margins. The breakpoints
+   below mainly reflow the few side-by-side pieces (photo, category index,
+   headers with a right-aligned date) once there's no longer room for them.
+   ------------------------------------------------------------------------ */
+
+/* Tablet / small laptop: shrink the fixed-width about photo a touch. */
+@media (max-width: 768px) {
+  .about-photo {
+    flex-basis: 10.5rem;
+    width: 10.5rem;
+  }
+
+  .category-name {
+    flex-basis: 11rem;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
+  .container {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+
+  header.site-header {
+    padding: 1.75rem 1.1rem 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  nav.site-nav {
+    gap: 0.6rem 1.25rem;
+  }
+
+  nav.site-nav a {
+    padding: 0.2rem 0; /* roomier tap targets */
+  }
+
+  h1 {
+    font-size: 1.45rem;
+  }
+
+  /* Stack the title and its right-aligned date/instructor vertically. */
+  .entry-header,
+  .course-header,
+  .project-header {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+  .course-instructor {
+    white-space: normal;
+  }
+
+  /* Category index: name on its own line above the codes. */
+  .category {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .category-name {
+    flex-basis: auto;
+  }
+
+  /* About: photo stacks above the intro text. */
+  .about-intro {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .about-photo {
+    flex-basis: auto;
+    width: 60%;
+    max-width: 13rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+  html {
+    font-size: 15px;
+  }
+
+  .about-photo {
+    width: 72%;
+  }
+}
