@@ -213,7 +213,7 @@ const COURSES = [
     category: "Theory & Algorithms",
     rating: "Top favorite",
     review: `I LOVED this class!!! Collaborating with my group was maybe the most fun I had
-    at CMU (shoutout Ryan Song, Derek Lu, and Josh Nam). Whiteboarding together working on some of these
+    at CMU. Whiteboarding together working on some of these
     problems was definitely the highlight of this semester and some of my favorite memories of all of college.
     Professor Ada is incredibly supportive and one of the best (if not the best) lecturer I've had.
     Some problems in this class were quite challenging (Minimum-Spanning-Tree Cut problem...) and
@@ -363,8 +363,7 @@ const COURSES = [
     but I have mixed thoughts on whether I'd suggest this class to someone now. Because of the
     advent of coding agents, learning to manually parse through docs may no longer be that
     valuable of a skill. Therefore I'd now recommend someone to take a systems class that focuses
-    on a more foundational understanding rather than this which is more implementation focused.
-    I'd like to publicly apologize to my friend Matt Wei for making him take this class.`,
+    on a more foundational understanding rather than this which is more implementation focused.`,
   },
   {
     code: "98-046",
@@ -374,8 +373,7 @@ const COURSES = [
     category: "General Education, Other",
     rating: "",
     review: `Took this with a few friends from Asian Christian Fellowship. Set my username to
-    'busy w 15319' and sat in a chair in game while doing my 15319 homework. Apologies to Ryan Kim,
-    April Gong, and Kevin Wang for making you guys miss an in game event because the game couldn't progress
+    'busy w 15319' and sat in a chair in game while doing my 15319 homework. Apologies to my group for making them miss an in game event because the game couldn't progress
     until all players were there and I was busy sitting in a chair in game while doing 15319 homework.`,
   },
   {
@@ -390,7 +388,7 @@ const COURSES = [
     It's structured so that lectures are front loaded in the first 2/3rds of the semester so the last 1/3rd
     can be spent on a final project. You're given a significant amount of compute to design some parallel system
     which I had a ton of fun with. Also learned to program in CUDA which was a challenging but
-    rewarding lab. Shoutout to my lab partner Matt Wei for bringing so much joy into this class.`,
+    rewarding lab.`,
   },
   {
     code: "15-445",
@@ -400,8 +398,9 @@ const COURSES = [
     category: "Systems",
     rating: "",
     review: `Great class! Goes over most database concepts you'd need to know and Pavlo
-    is a very passionate and unique lecturer. The first lecture he went on an exposition
-    about making the class available to inmate in prison. Cool guy.`,
+    is a very passionate and engaging lecturer. For example, he has a course DJ who plays him intro and outro music. He really knows
+    how to make an entrance. Also has many industry speakers engage with this class which
+    provides excellent networking and recruiting opportunities.`,
   },
   {
     code: "33-120",
