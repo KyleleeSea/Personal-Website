@@ -18,7 +18,7 @@ const SITE = {
     { label: "Email", href: "mailto:kylel@alumni.cmu.edu" },
     { label: "GitHub", href: "https://github.com/KyleleeSea" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/kyle-lee-8712a6222" },
-    { label: "Resume", href: "#" }, // drop a resume.pdf in the repo root and point this at "resume.pdf"
+    { label: "Resume", href: "assets/Lee,Kyle_Resume.pdf" },
   ],
 
   footer: "© 2026 Kyle Lee",
